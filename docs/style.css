@@ -1,9 +1,10 @@
-html, body { width: 100%; display: block; margin: 0; }
+html, body { width: 100%; display: block; margin: 0; padding: 0; }
 html, button { font-family: 'Metal Mania', cursive; }
 
 body { 
-  background-image: url('./media/tttb.png');
-  background-size: 80%;
+  background-image: linear-gradient(hsla(60, 100%, 50%, 0.5), hsla(240, 100%, 50%, 0.5)),
+                    url('./media/tttb.png');
+  background-size: contain;
   background-position: center;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -19,6 +20,7 @@ main {
 
 h1 {
   font-size: 3em;
+  color: hsl(240, 80%, 40%);
 }
 
 .centred {
@@ -32,9 +34,9 @@ h1 {
 }
 
 #thunderbutton {
-  font-size: 3em;
+  font-size: 5em;
   padding: 2rem;
   border-width: 0.5rem;
-  color: hsla(75, 50%, 90%);
-  background: hsla(75, 50%, 5%, 0.5);
+  color: hsl(60, 80%, 65%);
+  background-color: hsla(60, 50%, 5%, 0.2);
 }
