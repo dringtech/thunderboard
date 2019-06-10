@@ -36,7 +36,7 @@ const jsPlugins = [
   isDev || uglify(),            // Uglify code unless we're targetting 'development'
   copy({                        // Copy modules to the vendor directory
     targets: [
-      'p5/lib/p5.min.js'
+      'node_modules/@fortawesome/fontawesome-free/js/all.min.js'
     ],
     outputFolder: `${targetDir}/vendor`,
   }),
