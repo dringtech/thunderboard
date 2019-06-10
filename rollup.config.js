@@ -5,7 +5,7 @@ import commonjs from 'rollup-plugin-commonjs';
 import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
 
-const targetDir = 'public/js';
+const targetDir = 'docs/js';
 
 // Grab the NODE_ENV and store in targetEnv, default to 'production' if undefined 
 const { NODE_ENV: targetEnv = 'production' } = process.env;
