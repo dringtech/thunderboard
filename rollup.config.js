@@ -24,7 +24,8 @@ const jsPlugins = [
     exclude: 'node_modules/**', // Only transpile our source code
     presets: [                  // Setup presets
       ['@babel/env', {
-        modules: false
+        useBuiltIns: 'usage',
+        corejs: 3,
       }],
     ],
     plugins: [                  // Setup plugins

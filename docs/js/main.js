@@ -1,1 +1,1 @@
-!function(){"use strict";var e=new Audio("../media/lightning-strike-sound-effect.mp3");document.getElementById("thunderbutton").onclick=function(){return e.pause(),e.fastSeek(0),void e.play()}}();
+!function(){"use strict";var e=document.createElement("audio");e.src="../media/lightning-strike-sound-effect.mp3",e.type="audio/mpeg",document.getElementById("thunderbutton").onclick=function(){return e.pause(),e.load(),e.currentTime=0,void e.play()}}();
