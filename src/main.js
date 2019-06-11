@@ -1,14 +1,18 @@
 const audio = document.createElement('audio');
-audio.src = '../media/Storm_exclamation.mp3';
-audio.type='audio/mpeg';
+audio.type = 'audio/mpeg';
 
-function thunder() {
-  audio.pause();
-  audio.load();
-  audio.currentTime = 0;
-  audio.play();
+export function init(options) {
+  const { path, id = 'thunderbutton' } = options;
+  audio.src = path;
+  
+  function rumble() {
+    audio.pause();
+    audio.load();
+    audio.currentTime = 0;
+    audio.play();
+  }
+  
+  const thunderButton = document.getElementById(id);
+  
+  thunderButton.onclick = () => {rumble()};  
 }
-
-const thunderButton = document.getElementById('thunderbutton');
-
-thunderButton.onclick = () => thunder();

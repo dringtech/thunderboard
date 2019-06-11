@@ -1,1 +1,1 @@
-!function(){"use strict";var e=document.createElement("audio");e.src="../media/Storm_exclamation.mp3",e.type="audio/mpeg",document.getElementById("thunderbutton").onclick=function(){return e.pause(),e.load(),e.currentTime=0,void e.play()}}();
+var Thunder=function(t){"use strict";var i=document.createElement("audio");return i.type="audio/mpeg",t.init=function(t){var e=t.path,n=t.id,u=void 0===n?"thunderbutton":n;i.src=e,document.getElementById(u).onclick=function(){i.pause(),i.load(),i.currentTime=0,i.play()}},t}({});

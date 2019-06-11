@@ -49,7 +49,7 @@ export default [
     plugins: jsPlugins,
     external: [],
     output: {
-      name: 'index',
+      name: 'Thunder',
       dir: targetDir,
       format: 'iife',
       globals: {},
