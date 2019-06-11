@@ -1,5 +1,5 @@
 const audio = document.createElement('audio');
-audio.src = '../media/lightning-strike-sound-effect.mp3';
+audio.src = '../media/Storm_exclamation.mp3';
 audio.type='audio/mpeg';
 
 function thunder() {
