@@ -1,0 +1,12 @@
+CACHE MANIFEST
+# <%= VERSION %>
+
+CACHE:
+js/main.js
+js/vendor/all.min.js
+media/thunder2-long.mp3
+media/tttb.png
+style.css
+
+NETWORK:
+*

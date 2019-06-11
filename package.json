@@ -1,7 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "rollup --config"
+    "build": "rollup --config",
+    "postbuild": "npm run template",
+    "template": "cptmpl src/templates/ docs/ \"{ \\\"VERSION\\\": \\\"$(git describe --always --long) $(date -R) \\\" }\" --recursive --force"
   },
   "browserslist": [
     "> 0.25%",
@@ -16,6 +18,7 @@
     "@babel/preset-env": "^7.4.5",
     "@babel/runtime": "^7.4.5",
     "@fortawesome/fontawesome-free": "^5.9.0",
+    "cptmpl": "0.0.4",
     "rollup": "^1.14.6",
     "rollup-plugin-babel": "^4.3.2",
     "rollup-plugin-commonjs": "^10.0.0",

@@ -1,11 +1,11 @@
-import replace from 'rollup-plugin-replace';
 import babel from 'rollup-plugin-babel';
 import resolve from 'rollup-plugin-node-resolve';
 import commonjs from 'rollup-plugin-commonjs';
 import { uglify } from 'rollup-plugin-uglify';
 import copy from 'rollup-plugin-copy';
 
-const targetDir = 'docs/js';
+const rootDir = 'docs';
+const targetDir = `${rootDir}/js`;
 
 // Grab the NODE_ENV and store in targetEnv, default to 'production' if undefined 
 const { NODE_ENV: targetEnv = 'production' } = process.env;
@@ -15,9 +15,6 @@ const isDev = (targetEnv === 'development');
 
 // Define baseline plugins for transformation
 const jsPlugins = [
-  replace({
-    'process.env.NODE_ENV': JSON.stringify(targetEnv),
-  }),
   babel({
     configFile: false,          // Read config from here, not babel config file
     runtimeHelpers: true,       // Include runtime Helpers
