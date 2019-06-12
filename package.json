@@ -32,5 +32,6 @@
     "hooks": {
       "post-commit": "npm run build && git add docs/index.html docs/thunderboard.appcache && HUSKY_SKIP_HOOKS=1 git commit -m 'Updating templated items'"
     }
-  }
+  },
+  "version": "0.1.0"
 }
