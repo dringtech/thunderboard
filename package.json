@@ -3,7 +3,7 @@
   "scripts": {
     "build": "rollup --config",
     "postbuild": "npm run template",
-    "template": "cptmpl src/templates/ docs/ \"{ \\\"VERSION\\\": \\\"$(git describe --always --long) $(date -R) \\\" }\" --recursive --force"
+    "template": "cptmpl src/templates/ docs/ \"{ \\\"VERSION\\\": \\\"$(git describe --always) $(date -R) \\\" }\" --recursive --force"
   },
   "browserslist": [
     "> 0.25%",
