@@ -1,5 +1,3 @@
-import './appCache.js';
-
 const audio = document.createElement('audio');
 audio.type = 'audio/mpeg';
 
